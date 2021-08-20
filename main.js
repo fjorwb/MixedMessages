@@ -35,14 +35,14 @@ const message = () => {
 
 let n = 20;
 
-setTimeout(() => {
-  message();
-}, 1000);
+const mixedMessages = (n) => {
+  for (i = 0; i < n; i++) {
+    setTimeout(message, 2000);
+  }
+};
 
-// const mixedMessages = (n) => {
 //   for (i = 0; i < n; i++) {
 //     setTimeout(() => {
 //       message();
 //     }, 5000);
 //   }
-// };
