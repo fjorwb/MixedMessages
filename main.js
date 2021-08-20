@@ -30,3 +30,19 @@ const message = () => {
   console.log(`Is expected that you will ${mess3[c]}`);
   console.log(`by the ${mess2[b]}`);
 };
+
+// Run the function 20 times so it will display the mixed messages
+
+let n = 20;
+
+setTimeout(() => {
+  message();
+}, 1000);
+
+// const mixedMessages = (n) => {
+//   for (i = 0; i < n; i++) {
+//     setTimeout(() => {
+//       message();
+//     }, 5000);
+//   }
+// };
