@@ -26,7 +26,7 @@ const message = () => {
   let b = rand2();
   let c = rand3();
 
-  console.log(`Sign : ${_.capitalize(mess1[a])}`);
+  console.log(`Sign : ${mess1[a]}`);
   console.log(`Is expected that you will ${mess3[c]}`);
   console.log(`${mess2[b]}. Good Luck!`);
   console.log("--------------------------------------------------");
@@ -39,9 +39,3 @@ let n = 20;
 setInterval(() => {
   message();
 }, 2000);
-
-// const mixedMessages = (n) => {
-//   for (i = 0; i < n; i++) {
-//     setTimeout(message, 2000);
-//   }
-// };
