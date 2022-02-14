@@ -26,10 +26,16 @@ const message = () => {
   let b = rand2();
   let c = rand3();
 
-  console.log(`Sign : ${mess1[a]}`);
-  console.log(`Is expected that you will ${mess3[c]}`);
-  console.log(`${mess2[b]}. Good Luck!`);
-  console.log("--------------------------------------------------");
+  // console.log(`Sign : ${mess1[a]}`);
+  // console.log(`Is expected that you will ${mess3[c]}`);
+  // console.log(`${mess2[b]}. Good Luck!`);
+  // console.log("--------------------------------------------------");
+
+var elemP = document.getElementsByTagName('p');
+elemP[0].innerHTML = `Sign : ${mess1[a]}`;
+elemP[1].innerHTML = `Is expected that you will ${mess3[c]}`;
+elemP[2].innerHTML = `${mess2[b]}.<br/><br/> Good Luck!`;
+// elemP[3].innerHTML = "--------------------------------------------------";
 };
 
 // Run the function 20 times so it will display the mixed messages
@@ -38,4 +44,4 @@ let n = 20;
 
 setInterval(() => {
   message();
-}, 2000);
+}, 2500);
